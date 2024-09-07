@@ -1,0 +1,20 @@
+  mvc:
+    view:
+      prefix: /view/
+      suffix: .jsp
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: create-drop
+    show-sql:  true
+  datasource:
+    driver-class-name:  com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/banking
+    username:  root
+    password: Rishikumar12345
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
